@@ -1,0 +1,87 @@
+<!--Proyecto de Tienda Página de la tienda-->
+<?php
+  session_start();
+?>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilo_tienda.css">
+    <title>Music Store</title>
+  </head>
+  <body style="background-color:black;">
+    
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header nav.navbar">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+        data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Navegar</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Music Store</a>
+      </div>
+      
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Inicio</a></li>
+          <li><a href="#">Artículos</a></li>
+        </ul>
+        
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Usuario <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Cerrar sesión</a></li>
+              <li><a href="info_usuario.php">Información de usuario</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('../img/piano.jpg')"></div>
+                <div class="carousel-caption">
+                    <h2>Encuentra tu pasión</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('../img/guitarra.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Agudiza tus sentidos</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('../img/bateria.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Alimenta tu adrenalina</h2>
+                </div>
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+    <script src="../js/jquery-3.2.0.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

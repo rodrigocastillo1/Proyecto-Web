@@ -1,0 +1,39 @@
+<!--Proyecto de Tienda INICIO SESIÓN-->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>Iniciar sesión</title>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <form action="src/login.php" method="POST" class="form-signin">
+        <h2 class="form-signin-heading">Iniciar sesión</h2>
+        <label for="inputEmail" class="sr-only">Usuario</label>
+        <input type="email" name="email" class="form-control" placeholder="Usuario" required autofocus>
+        <label for="inputPassword" class="sr-only">Contraseña</label>
+        <input type="password" name="password" class="form-control" placeholder="Contraseña" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Recordar mi información
+          </label>
+        </div>
+          <a href="tienda.html"><button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar sesión</button></a>
+      </form>
+      <br>
+      <a href="src/registro.html"><button class="btn btn-lg btn-primary btn-block" type="button">Registrarse</button></a>
+
+    </div>
+
+  </body>
+</html>
